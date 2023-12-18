@@ -1,0 +1,214 @@
+.pathof__progress {
+  margin-top: 7rem;
+  width: 100%;
+
+  .path__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    .path__titles {
+      display: grid;
+      gap: 0.7rem;
+      font-family: var(--montserrat2-font);
+
+      .subtitle {
+        font-family: var(--montserrat2-font);
+        color: var(--gold);
+        font-size: var(--smaller-font-size);
+        position: relative;
+        transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+
+      .title {
+        font-size: calc(var(--h3-font-size) + 0.3rem);
+        position: relative;
+        transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+    }
+
+    .path__contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .left__section {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .path__image {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 1/0.9;
+          clip-path: circle(100% at 50% 50%);
+          transition: clip-path 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+
+          &:hover {
+            clip-path: circle(47% at 50% 50%);
+          }
+
+          img {
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+
+        .path__content {
+          display: grid;
+          gap: 1.2rem;
+
+          .pc-title {
+            font-family: var(--montserrat2-font);
+            font-size: var(--h3-font-size);
+          }
+
+          .pc-text {
+            line-height: 23px;
+          }
+        }
+      }
+
+      .right__section {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .pc-1 {
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          .path__image {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1/1.3;
+
+            clip-path: circle(100% at 50% 50%);
+            transition: clip-path 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+
+            &:hover {
+              clip-path: circle(42% at 50% 50%);
+            }
+
+            img {
+              object-fit: cover;
+              object-position: top;
+            }
+          }
+
+          .path__content {
+            display: grid;
+            gap: 1.2rem;
+
+            .pc-title {
+              font-family: var(--montserrat2-font);
+              font-size: var(--h3-font-size);
+            }
+
+            .pc-text {
+              line-height: 23px;
+              
+            }
+          }
+        }
+      }
+    }
+
+    .path__cta{
+      width: 180px;
+      height: 180px;
+      border: 1px solid black;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      margin: 3rem auto 0;
+      color: var(--text-color);
+
+      span{
+        font-size: var(--smaller-font-size);
+        font-family: var(--montserrat2-font);
+      }
+    }
+  }
+}
+
+/*======== RESPONSIVE DESIGN =========*/
+@media screen and (max-width: 1054px) {
+  .pathof__progress {
+    margin-top: 6rem;
+    width: 100%;
+  
+    .path__container {
+  
+      .path__contents {
+        .left__section {
+  
+          .path__content {
+            gap: 1.1rem;
+  
+            .pc-text {
+              line-height: 21px;
+            }
+          }
+        }
+  
+        .right__section {
+          width: 53%;
+          .pc-1 {
+  
+            .path__content {
+              gap: 1.1rem;
+  
+              .pc-text {
+                line-height: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 906px) {
+  .pathof__progress {
+  
+    .path__container {
+  
+      .path__contents {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+
+        .left__section {
+          width: 48%;
+
+        }
+  
+        .right__section {
+          width: 100%;
+
+          .pc-1 {
+            .path__image {
+              aspect-ratio: 1/1;
+            }
+  
+            .path__content {
+              gap: 1.1rem;
+  
+              .pc-text {
+                line-height: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

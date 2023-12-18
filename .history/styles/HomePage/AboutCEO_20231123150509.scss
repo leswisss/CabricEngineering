@@ -1,0 +1,111 @@
+.about__ceo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 3rem 0 6rem;
+  
+  .ceo__image{
+    width: 40%;
+    aspect-ratio: 1/1.2;
+    position: relative;
+
+    .ceo__back-image{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.2);
+    }
+
+    .ceo__image{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      overflow: hidden;
+
+      img{
+        object-fit: cover;
+      }
+    }
+  }
+
+  .ceo__desc{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    .first__text{
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 27px;
+
+
+      .text__overflow{
+        overflow: hidden;
+        font-size: calc(var(--h3-font-size) - 0.2rem);
+        margin-right: 7px;
+
+        p{
+          position: relative;
+          top: -100%;
+          
+        }
+      }
+    }
+  }
+}
+
+
+/*======== RESPONSIVE DESIGN =========*/
+@media screen and (max-width: 1170px) {
+  .about__ceo{
+    margin: 4rem 0 6rem;
+    
+    .ceo__image{
+      width: 45%;
+      aspect-ratio: 1/1.2;
+      position: relative;
+  
+    }
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .about__ceo{
+    
+    .ceo__image{
+      width: 45%;
+      aspect-ratio: 1/1.2;
+      position: relative;
+  
+    }
+
+    .ceo__desc{
+      width: 47%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      
+      .first__text{
+        line-height: 25px;
+  
+  
+        .text__overflow{
+          overflow: hidden;
+          font-size: calc(var(--h3-font-size) - 0.05rem);
+  
+          p{
+            position: relative;
+            top: -100%;
+            
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.home__portfolio{
+  width: 100%;
+  margin: 5rem 0;
+
+  .h-portfolio__container{
+
+    .hp__top{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3rem;
+
+      .hp-left{
+        width: 30%;
+        display: grid;
+        gap: 0.7rem;
+        font-family: var(--montserrat2-font);
+
+        .hp-subtitle{
+          font-size: var(--smaller-font-size);
+          color: var(--gold);
+          position: relative;
+          transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+
+        }
+
+        .hp-title{
+          display: block;
+          position: relative;
+          font-size: calc(var(--h3-font-size) + 0.3rem);
+          transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+      }
+
+      .hp-right{
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-end;
+        
+        justify-content: center;
+        font-family: var(--montserrat2-font);
+
+        span{
+          display: block;
+          transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+          position: relative;
+
+          &:nth-of-type(1){
+            font-size: var(--smaller-font-size);
+
+          }
+
+          &:nth-of-type(2){
+            font-size: calc(var(--biggest-font-size) - 1rem);
+            line-height: 110px;
+          }
+        }
+      }
+    }
+
+    .hp__bottom{
+      width: 100%;
+    }
+  }
+
+}
+
+/*============= RESPONSIVE DESIGN ==============*/
+@media screen and (max-width: ) {
+  
+}

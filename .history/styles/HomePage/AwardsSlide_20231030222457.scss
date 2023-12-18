@@ -1,0 +1,24 @@
+.award__slide{
+  width: 100%;
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 0.38fr 0.62fr;
+  border-bottom: 1px solid black;
+
+  .as__left{
+    p{
+      text-transform: capitalize;
+    }
+  }
+
+  .as__right{
+    position: relative;
+
+    .as__content{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: s;
+    }
+  }
+}

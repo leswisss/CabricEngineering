@@ -1,0 +1,48 @@
+.about__team{
+  width: 100%;
+  margin-bottom: 5rem;
+
+  .at__container{
+    .atc__top{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+
+      .atc__overflow{
+        overflow: hidden;
+
+        &:nth-of-type(2) {
+          width: 35%;
+        }
+
+        &:nth-of-type(1) {
+          position: relative;
+          left: 100px;
+        }
+
+        span{
+          display: block;
+          font-size: var(--smaller-font-size);
+          font-family: var(--montserrat2-font);
+          color: var(--gold);
+          position: relative;
+        }
+        
+        p{
+          line-height: 24px;
+          display: block;
+          position: relative;
+          will-change: transform;
+        }
+      }
+
+    }
+  }
+}
+
+/*=========== RESPONSIVE DESIGN ============*/
+@media screen and (max-width: 120) {
+  
+}

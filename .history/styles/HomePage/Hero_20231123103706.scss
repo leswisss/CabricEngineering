@@ -1,0 +1,83 @@
+.home{
+  width: 100%;
+
+  .home__container{
+    width: 100%;
+    padding-top: 4rem;
+
+    .container{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+
+      h3{
+        text-align: end;
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-normal);
+        line-height: 30px;
+      }
+
+      h4{
+        text-align: end;
+        display: none;
+      }
+    }
+  }
+
+}
+
+
+/*=========== RESPONSIVE DESIGN ===========*/
+@media screen and (max-width: 1088px) {
+  .home{
+    .home__container{
+      padding-top: 4rem;
+  
+      .container{
+        margin-bottom: 2rem;
+  
+        h3{
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .home{
+    .home__container{
+      padding-top: 4rem;
+  
+      .container{
+        margin-bottom: 2rem;
+  
+        h3{
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .home{
+    .home__container{
+      padding-top: 4rem;
+  
+      .container{
+        margin-bottom: 2rem;
+  
+        h3{
+          line-height: 24px;
+          display: none;
+        }
+
+        h{
+          line-height: 24px;
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.numbers__div{
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgba(0,0,0,0.4);
+  opacity: 0.3;
+
+  &.last__number{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+  }
+  
+  .left__section, .right__section{
+    width: 50%;
+  }
+
+  .left__section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .a-number{
+      font-family: var(--montserrat2-font);
+      font-size: var(--biggest-font-size);
+      line-height: 140px;
+    }
+
+    span{
+      font-size: var(--small-font-size);
+      font-family: var(--montserrat2-font);
+    }
+  }
+
+  .right__section{
+    p{
+      width: 60%;
+      font-size: var(--small-font-size);
+    }
+  }
+}
+
+/*========= RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 1030px) {
+  .numbers__div{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid rgba(0,0,0,0.4);
+    opacity: 0.3;
+  
+    &.last__number{
+      border-bottom: 1px solid rgba(0,0,0,0.4);
+    }
+    
+    .left__section{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  
+      .a-number{
+        font-family: var(--montserrat2-font);
+        font-size: var(--biggest-font-size);
+        line-height: 140px;
+      }
+  
+      span{
+        font-size: var(--small-font-size);
+        font-family: var(--montserrat2-font);
+      }
+    }
+  
+    .right__section{
+      p{
+        width: 60%;
+        font-size: var(--small-font-size);
+      }
+    }
+  }
+}

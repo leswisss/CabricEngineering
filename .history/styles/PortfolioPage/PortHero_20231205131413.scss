@@ -1,0 +1,79 @@
+.portfolio__hero{
+  width: 100%;
+  margin: 3rem 0 3rem;
+
+  .ph__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    .ph__bold{
+      font-size: calc(var(--h1-font-size) + 3rem);
+      font-family: var(--montserrat2-font);
+      text-transform: uppercase;
+    }
+
+    .portfolio__filter{
+      width: max-content;
+      overflow: hidden;
+
+      .pf__wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 4rem;
+
+        span{
+          cursor: pointer;
+          font-size: var(--small-font-size);
+          text-transform: uppercase;
+          transition: all 0.5s ease;
+          font-family: var(--montserrat-font);
+          opacity: 0.5;
+
+          &.active__filter{
+            font-family: var(--montserrat2-font);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=========== RESPONSIVE DESIGN ============*/
+@media screen and (max-width: 450px) {
+  .portfolio__hero{
+    width: 100%;
+    margin: 2rem 0 3rem;
+  
+    .ph__container{
+  
+      .ph__bold{
+        font-size: calc(var(--h1-font-size) + 2rem);
+      }
+  
+      .portfolio__filter{
+        width: 100%;
+        overflow: auto;
+  
+        .pf__wrapper{
+          width: 100%;
+          gap: 0rem;
+          justify-content: space-between;
+  
+          span{
+            font-size: var(--smaller-font-size);
+  
+            &.active__filter{
+              font-family: var(--montserrat2-font);
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

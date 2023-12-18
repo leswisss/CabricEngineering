@@ -1,0 +1,241 @@
+.about__project {
+  width: 100%;
+  margin: 3rem 0 5rem;
+
+  .ap__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .ap__wrapper {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+
+      .ap__overflow1 {
+        overflow: hidden;
+        width: 40%;
+
+        p {
+          position: relative;
+          display: block;
+          font-size: var(--small-font-size);
+          font-family: var(--montserrat2-font);
+        }
+      }
+
+      .ap__main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .ap__overflow {
+          overflow: hidden;
+
+          span {
+            font-family: var(--montserrat2-font);
+            text-transform: uppercase;
+            font-size: var(--h3-font-size);
+            display: block;
+            position: relative;
+          }
+        }
+
+        .ap__main-right {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          .ap__overflow {
+            overflow: hidden;
+
+            p {
+              position: relative;
+              display: block;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 23px;
+            }
+          }
+
+          .ap__ty-loc {
+            display: flex;
+            justify-content: flex-start;
+            gap: 4rem;
+            align-items: flex-start;
+
+            .ty-loc {
+              display: grid;
+              gap: 1rem;
+
+              span {
+                &:nth-of-type(1) {
+                  text-transform: uppercase;
+                  color: rgba(0, 0, 0, 0.5);
+                }
+
+                &:nth-of-type(2) {
+                  text-transform: capitalize;
+                  font-size: var(--small-font-size);
+                  font-family: var(--montserrat2-font);
+                  font-weight: var(--font-medium);
+                }
+              }
+            }
+          }
+
+          .about__summary {
+            display: grid;
+            width: 60%;
+
+            .a__summary {
+              width: 100%;
+              border-bottom: 1px solid black;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 1.2rem 0;
+              font-size: var(--smaller-font-size);
+              font-family: var(--montserrat2-font);
+              font-weight: var(--font-medium);
+
+              &:nth-of-type(1) {
+                border-top: 1px solid black;
+              }
+
+              span {
+                &:nth-of-type(2) {
+                  color: rgba(0, 0, 0, 0.7);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*============= RESPONSIVE DESIGN =============*/
+@media screen and (max-width: 1024px) {
+  .about__project {
+    margin: 3rem 0 5rem;
+  
+    .ap__container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+  
+      .ap__wrapper {
+        width: 95%;
+        gap: 3rem;
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+  .about__project {
+  
+    .ap__container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+  
+      .ap__wrapper {
+        width: 100%;
+        gap: 3rem;
+
+        .ap__main {
+  
+          .ap__main-right {
+            .ap__ty-loc {
+              gap: 7rem;
+            }
+  
+            .about__summary {
+              width: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .about__project {
+  
+    .ap__container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+  
+      .ap__wrapper {
+        width: 100%;
+        gap: 3rem;
+
+        .ap__overflow1 {
+          overflow: hidden;
+          width: 60%;
+        }
+
+        .ap__main {
+  
+          .ap__main-right {
+            width: 65%;
+
+            .ap__ty-loc {
+              gap: 7rem;
+            }
+  
+            .about__summary {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .about__project {
+    .ap__container {  
+      .ap__wrapper {
+        width: 100%;
+        gap: 3rem;
+
+        .ap__overflow1 {
+          overflow: hidden;
+          width: 75%;
+        }
+
+        .ap__main {
+          flex-direction: column;
+          j
+  
+          .ap__main-right {
+            width: 65%;
+
+            .ap__ty-loc {
+              gap: 7rem;
+            }
+  
+            .about__summary {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

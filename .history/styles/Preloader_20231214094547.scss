@@ -1,0 +1,31 @@
+.preloader{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: var(--ivory);
+
+  .preloader__text{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .home__active{
+      width: max-content;
+      height: max-content;
+      display: grid;
+      gap: 0.5rem;
+      place-items: center;
+    }
+    
+  }
+
+  .preloader__overlay{
+    
+  }
+}

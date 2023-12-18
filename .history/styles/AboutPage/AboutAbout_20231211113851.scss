@@ -1,0 +1,200 @@
+.aboutabout{
+  width: 100%;
+  margin-bottom: 5rem;
+
+  .about__about{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .aa__left{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+
+      .aabouttext{
+        width: 100%;
+        height: 100px;
+        
+        span{
+          font-size: var(--smaller-font-size);
+          font-family: var(--montserrat2-font);
+          position: relative;
+          left: 100px;
+          color: var(--gold);
+          display: block;
+        }
+      }
+
+      .aa__image-main{
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1.1;
+
+        img{
+          object-fit: cover;
+        }
+      }
+    }
+
+    .aa__right{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-items: flex-start;
+
+      .aa__overflow2{
+        overflow: hidden;
+        height: 100px;
+
+        p{
+          font-size: var(--h3-font-size);
+          font-family: var(--montserrat2-font);
+          line-height: 30px;
+          display: block;
+          position: relative;
+        }
+      }
+
+      .aa__content-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2.5rem;
+        
+        .aa__content-wrapper{
+          display: grid;
+          gap: 1rem;
+
+          .aac__overflow{
+            overflow: hidden;
+
+            span{
+              font-size: calc(var(--h3-font-size) - 0.2rem);
+              font-family: var(--montserrat2-font);
+              display: block;
+              position: relative;
+            }
+  
+            p{
+              color: rgba(0,0,0,0.8);
+              line-height: 23px;
+              text-align: justify;
+              display: block;
+              position: relative;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+/*=========== RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 1200px) {
+  .aboutabout{
+    .about__about{
+
+      .aa__left{
+        .aabouttext{
+          height: 90px;
+        }
+  
+        .aa__image-main{
+          aspect-ratio: 1/1.4;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .aboutabout{
+    margin-bottom: 5rem;
+  
+    .about__about{
+
+      .aa__left{
+        width: 45%;
+
+        .aabouttext{
+          height: 100px;
+        }
+  
+        .aa__image-main{
+          aspect-ratio: 1/1.4;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .aboutabout{
+    margin-bottom: 5rem;
+  
+    .about__about{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 2rem;
+
+      .aa__left{
+        width: 60%;
+
+        .aabouttext{
+          height: 50px;
+        }
+  
+        .aa__image-main{
+          aspect-ratio: 1/0.8;
+        }
+      }
+
+      .aa__right{
+        width: 100%;
+  
+        .aa__overflow2{
+          overflow: hidden;
+          height: 50px;
+        }
+  
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .aboutabout{
+  
+    .about__about{
+      gap: 2rem;
+
+      .aa__left{
+        width: 60%;
+
+        .aabouttext{
+          height: 50px;
+        }
+  
+        .aa__image-main{
+          aspect-ratio: 1/0.8;
+        }
+      }
+
+      .aa__right{
+        width: 100%;
+  
+        .aa__overflow2{
+          overflow: hidden;
+          height: 50px;
+        }
+  
+      }
+    }
+  }
+}

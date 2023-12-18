@@ -1,0 +1,133 @@
+.abouthero {
+  width: 100%;
+  margin: 10rem 0 4rem;
+
+  .about__hero {
+    .ah__image {
+      width: 100%;
+      height: 180px;
+      position: relative;
+
+      img {
+        object-fit: cover;
+
+        filter: brightness(60%);
+      }
+
+      span {
+        font-family: var(--montserrat2-font);
+        font-size: calc(var(--h1-font-size) + 4.3rem);
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        color: var(--ivory);
+      }
+    }
+  }
+}
+
+/*=========== RESPONSIVE DESIGN ===========*/
+@media screen and (max-width: 1280px) {
+  .abouthero {
+    .about__hero {
+      .ah__image {
+        height: 170px;
+
+        span {
+          font-size: calc(var(--h1-font-size) + 3rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .abouthero {
+    .about__hero {
+      .ah__image {
+        height: 150px;
+
+        span {
+          font-size: calc(var(--h1-font-size) + 2rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .abouthero {
+    .about__hero {
+      .ah__image {
+        height: 150px;
+
+        span {
+          font-size: calc(var(--h1-font-size) + 1.5rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .abouthero {
+    .about__hero {
+      .ah__image {
+        height: 120px;
+
+        span {
+          font-size: calc(var(--h1-font-size) + 1.3rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .abouthero {
+    .about__hero {
+      &.container{
+        
+      }
+      .ah__image {
+        height: 110px;
+
+        span {
+          font-size: calc(var(--h1-font-size) + 1rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .abouthero {
+    margin: 9rem 0 3rem;
+
+    .about__hero {
+      .ah__image {
+        height: 100px;
+
+        span {
+          font-size: calc(var(--h1-font-size) + 0.3rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .abouthero {
+    .about__hero {
+      .ah__image {
+        span {
+          font-size: calc(var(--h1-font-size) + 0.15rem);
+        }
+      }
+    }
+  }
+}

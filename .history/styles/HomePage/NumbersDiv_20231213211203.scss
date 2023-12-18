@@ -1,0 +1,152 @@
+.numbers__div{
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid var(--green);
+  opacity: 0.3;
+
+  &.last__number{
+    border-bottom: 1px solid var(--green);
+  }
+  
+  .left__section, .right__section{
+    width: 50%;
+  }
+
+  .left__section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .a-number{
+      font-family: var(--montserrat2-font);
+      font-size: var(--biggest-font-size);
+      line-height: 150px;
+    }
+
+    span{
+      font-size: calc(var(--normal-font-size) + 0.1rem);
+      font-family: var(--optician-font);
+    }
+  }
+
+  .right__section{
+    p{
+      width: 60%;
+      font-size: var(--small-font-size);
+    }
+  }
+}
+
+/*========= RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 1030px) {
+  .numbers__div{
+    
+    .left__section{
+      width: 60%;
+     
+  
+      .a-number{
+        font-size: calc(var(--biggest-font-size) - 0.2rem);
+        line-height: 140px;
+      }
+
+      span{
+        font-size: var(--small-font-size);
+      }
+  
+    }
+  
+    .right__section{
+      width: 40%;
+
+      p{
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .numbers__div{
+    
+    .left__section{
+      width: 60%;
+     
+  
+      .a-number{
+        font-size: calc(var(--biggest-font-size) - 0.2rem);
+        line-height: 140px;
+      }
+  
+    }
+  
+    .right__section{
+      width: 40%;
+
+      p{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .numbers__div{
+    
+    .left__section{
+      width: 55%;
+     
+      .a-number{
+        font-size: calc(var(--biggest-font-size) + 0.5rem);
+        line-height: 110px;
+      }
+
+      span{
+        font-size: var(--smaller-font-size);
+      }
+  
+    }
+  
+    .right__section{
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .numbers__div{
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    
+    .left__section{
+      width: 100%;
+     
+      .a-number{
+        font-size: calc(var(--biggest-font-size) + 0.5rem);
+        line-height: 110px;
+      }
+
+      span{
+        font-size: calc(var(--small-font-size) + 0.1rem);
+        position: relative;
+        top: 15px;
+      }
+  
+    }
+  
+    .right__section{
+      width: 100%;
+
+      p{
+        font-size: calc(var(--small-font-size) + 0.1rem);
+      }
+
+    }
+  }
+}

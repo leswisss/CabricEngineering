@@ -1,0 +1,36 @@
+.testimonials{
+  width: 100%;
+  background-color: var(--green);
+  color: var(--ivory);
+  padding: 4rem 0 5rem;
+
+  .testimonials__container{
+    .tc__top{
+      display: grid;
+      gap: 0.7rem;
+
+      span{
+        font-family: var(--montserrat2-font);
+        position: relative;
+        display: block;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+
+        &:nth-of-type(1){
+          color: var(--ivory);
+          font-size: calc(var(--smaller-font-size) + 0.2rem);
+          font-family: var(--optician-font);
+
+        }
+
+        &:nth-of-type(2){
+          font-size: calc(var(--h3-font-size) + 0.3rem);
+        }
+      }
+    }
+
+    .tc__bottom{
+      margin-top: 3rem;
+    }
+  }
+}

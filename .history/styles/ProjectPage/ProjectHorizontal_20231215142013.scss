@@ -1,0 +1,37 @@
+.project__horizontal{
+  width: 100%;
+  max-width: ;
+  margin: 7rem 0;
+
+  .prh__trigger{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .project__wrapper{
+      width: max-content;
+      height: max-content;
+      display: flex;
+      flex-wrap: nowrap;
+
+      .prh__image-container{
+        padding-right: 50px;
+        width: max-content;
+        height: max-content;
+
+        .prh__image{
+          width: 900px;
+          aspect-ratio: 16/9;
+          position: relative;
+          min-width: 900px;
+          
+          img{
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

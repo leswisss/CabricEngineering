@@ -1,0 +1,27 @@
+.preloader{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--green);
+  color: var(--ivory);
+
+  .preloader__text{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .home__active{
+      width: max-content;
+      height: max-content;
+      display: flex;
+      f
+    }
+    
+  }
+}

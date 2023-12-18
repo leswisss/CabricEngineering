@@ -1,0 +1,61 @@
+.m-sliderContainer{
+  position: relative;
+  border-bottom: 1px solid #00000080;
+  border-top: 1px solid rgba(0,0,0,0.5);
+  margin-bottom: 3rem;
+  font-family: var(--montserrat2-font);
+
+  .m-slider{
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+
+    p{
+      margin: 0;
+      color: var(--text-color);
+      font-size: calc(var(--biggest-font-size) + 1rem);
+      font-weight: var(--font-medium);
+      
+
+      span{
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+      }
+
+      &:nth-of-type(2){
+        position: absolute;
+        left: 2202px;
+      }
+    }
+  }
+}
+
+/*========= RESPONSIVE DESIGN ===========*/
+@media screen and (max-width: 1088px) {
+  .m-sliderContainer{
+    .m-slider{
+  
+      p{
+        &:nth-of-type(2){
+          position: absolute;
+          left: 1702.57px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: px) {
+  .m-sliderContainer{
+    .m-slider{
+  
+      p{
+        &:nth-of-type(2){
+          position: absolute;
+          left: 1702.57px;
+        }
+      }
+    }
+  }
+}

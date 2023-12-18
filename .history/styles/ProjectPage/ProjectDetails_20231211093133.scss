@@ -1,0 +1,190 @@
+.project__details{
+  width: 100%;
+  margin-bottom: 4rem;
+
+  .pro-d__container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .ninety{
+      width: 90%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      align-items: flex-start;
+
+      .prod__top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .prodt__overflow{
+          overflow: hidden;
+
+          span{
+            font-family: var(--montserrat2-font);
+            font-size: var(--h3-font-size);
+            display: block;
+            position: relative;
+          }
+        }
+
+        .prodt__right{
+          width: 60%;
+          display: grid;
+          gap: 2rem;
+
+          .prodt__overflow{
+            overflow: hidden;
+
+            p{
+              color: rgba(0,0,0,0.9);
+              line-height: 23px;
+            }
+          }
+        }
+      }
+
+      .prod__bottom{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5rem;
+        align-items: flex-start;
+
+        .prodb__left{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .prodb__image{
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            overflow: hidden;
+            position: relative;
+
+            img{
+              object-fit: cover;
+            }
+          }
+
+          svg{
+            font-size: var(--h1-font-size);
+          }
+        }
+
+        .prodb__right{
+          width: 60%;
+          display: grid;
+          gap: 2rem;
+
+          .prodb__overflow{
+            width: 90%;
+            overflow: hidden;
+
+            span{
+              position: relative;
+              display: block;
+              width: 80%;
+              font-family: var(--montserrat2-font);
+              font-size: var(--small-font-size);
+            }
+
+            p{
+              width: 100%;
+              color: rgba(0,0,0,0.9);
+              line-height: 23px;
+              position: relative;
+              display: block;
+            }
+
+            &:nth-of-type(3){
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-start;
+
+              span{
+                width: max-content;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*============ RESPONSIVE DESIGN ============*/
+@media screen and (max-width: 1024px) {
+  .project__details{
+    margin-bottom: 4rem;
+  
+    .pro-d__container{
+      .ninety{
+        width: 95%;
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .project__details{
+    .pro-d__container{
+      .ninety{
+
+        .prod__top{
+          .prodt__right{
+            width: 70%;
+          }
+        }
+
+        .prod__bottom{
+          .prodb__right{
+            width: 70%;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project__details{
+    .pro-d__container{
+      .ninety{
+        width: 100%;
+
+        .prod__top{
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 2rem;
+
+          .prodt__right{
+            width: 100%;
+          }
+        }
+
+        .prod__bottom{
+          .prodb__left{
+            width: 100px;
+            .prodb__image{
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+          .prodb__right{
+            width: 80%;
+          }
+        }
+
+      }
+    }
+  }
+}

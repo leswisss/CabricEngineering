@@ -1,0 +1,45 @@
+.home{
+  width: 100%;
+
+  .home__container{
+    width: 100%;
+    padding-top: 4rem;
+
+    .container{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+
+      h3{
+        text-align: end;
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-normal);
+        line-height: 30px;
+      }
+    }
+  }
+
+}
+
+
+/*=========== RESPONSIVE DESIGN ===========*/
+@media screen and (max-width: 1088px) {
+  .home{
+    .home__container{
+      padding-top: 4rem;
+  
+      .container{
+        margin-bottom: 2rem;
+  
+        h3{
+          text-align: end;
+          font-size: var(--h3-font-size);
+          font-weight: var(--font-normal);
+          line-height: 26px;
+        }
+      }
+    }
+  
+  }
+  
+}

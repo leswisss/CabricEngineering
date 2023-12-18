@@ -1,0 +1,24 @@
+.home__awards{
+  width: 100%;
+
+  .awards__container{
+    
+    .ha__top{
+      display: grid;
+      gap: 0.7rem;
+
+      span{
+        font-family: var(--montserrat2-font);
+
+        &:nth-of-type(1){
+          color: var(--gold);
+          font-size: var(--small-font-size);
+        }
+
+        &:nth-of-type(2){
+          font-size: calc(var(--h3-font-size) + 0.3rem);
+        }
+      }
+    }
+  }
+}

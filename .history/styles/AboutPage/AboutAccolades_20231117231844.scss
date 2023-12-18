@@ -1,0 +1,23 @@
+.aboutaccolades{
+  width: 100%;
+  margin-bottom: 8rem;
+
+  .about__accolades{
+    display: grid;
+    gap: 3rem;
+
+    .aac__overflow{
+      position: relative;
+      left: 100px;
+      overflow: hidden;
+
+      span{
+        font-size: var(--smaller-font-size);
+        font-family: var(--montserrat2-font);
+        color: var(--gold);
+        display: block;
+        position: relative;
+      }
+    }
+  }
+}
