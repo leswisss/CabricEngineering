@@ -1,0 +1,61 @@
+.projecthero {
+  width: 100%;
+  margin: 10rem 0 3rem;
+
+  .ph__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    span {
+      font-size: calc(var(--h1-font-size) + 3rem);
+      font-family: var(--montserrat2-font);
+    }
+
+    .ph__image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/*============= RESPONSIVE DESIGN =============*/
+
+@media screen and (max-width: 700px) {
+  .projecthero {
+    margin: 10rem 0 2rem;
+
+    .ph__container {
+      span {
+        font-size: calc(var(--h1-font-size) + 2rem);
+        line-height: 54px;
+      }
+
+      .ph__image {
+        aspect-ratio: 16/10;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projecthero {
+    margin: 10rem 0 2rem;
+    .ph__container {
+      span {
+        font-size: calc(var(--h1-font-size) + 1.5rem);
+        line-height: 52px;
+      }
+
+      .ph__image {
+        aspect-ratio: 16/16;
+      }
+    }
+  }
+}
