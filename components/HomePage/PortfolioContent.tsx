@@ -178,7 +178,7 @@ const PortfolioContent = () => {
       <div className="pc-bottom">
         <div className="pcb__left">
           <div className="link__button">
-            <Link href="/">
+            <Link href="/portfolio">
               <span>VIEW PORTFOLIO</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

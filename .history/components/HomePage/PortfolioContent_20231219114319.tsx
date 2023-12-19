@@ -6,7 +6,7 @@ import {
   SwiperSlide,
   useSwiper,
 } from "swiper/react";
-import {In}
+import { useInView } from "react-intersection-observer";
 import { Swiper } from "swiper";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -21,6 +21,11 @@ const PortfolioContent = () => {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
 
   const [activeSlide, setActiveSlide] = useState(0);
+
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
 
   const SwiperButtons = () => {
     const swiper = useSwiper();
@@ -50,7 +55,11 @@ const PortfolioContent = () => {
   };
 
   return (
-    <div className="portfolio__content">
+    <div
+      className="portfolio__content"
+      ref={ref}
+      style={{ opacity: inView ? 1 : 0 }}
+    >
       <div className="pc-top">
         <div className="portfolio__swiper">
           <SwiperComponent
@@ -58,6 +67,7 @@ const PortfolioContent = () => {
               setActiveSlide(swiper.activeIndex);
             }}
             onSwiper={(swiper) => setSwiper(swiper)}
+            speed={700}
           >
             <div className="pi__details position__absolute">
               <div className="pid-top">
@@ -114,7 +124,7 @@ const PortfolioContent = () => {
         <div className="portfolio__images">
           <div className="port__image-left">
             <div className="pimage__overlay">
-              <Link href="/">
+              <Link href="/portfolio/urban-oasis">
                 <span>DISCOVER</span>
               </Link>
             </div>
@@ -168,7 +178,7 @@ const PortfolioContent = () => {
       <div className="pc-bottom">
         <div className="pcb__left">
           <div className="link__button">
-            <Link href="/">
+            <Link href="/portfolio">
               <span>VIEW PORTFOLIO</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +200,6 @@ const PortfolioContent = () => {
             <div
               className="project__selector"
               key={`ps-${i}`}
-              style={{ opacity: activeSlide === i ? 0.5 : 1 }}
               onClick={() => {
                 setActiveSlide(i);
                 if (swiper) {
@@ -198,7 +207,12 @@ const PortfolioContent = () => {
                 }
               }}
             >
-              <span>{data.name}</span> <span>{data.year}</span>
+              <span style={{ opacity: activeSlide === i ? 0.5 : 1 }}>
+                {data.name}
+              </span>{" "}
+              <span style={{ opacity: activeSlide === i ? 0.5 : 1 }}>
+                {data.year}
+              </span>
             </div>
           ))}
         </div>
