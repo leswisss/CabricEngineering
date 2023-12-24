@@ -492,7 +492,6 @@
       .portfolio__swiper {
         aspect-ratio: 16/12;
         min-height: 460px !important;
-        height: 460px !important;
 
         .swiper {
           .pi__details {
@@ -538,7 +537,9 @@
     .pc-top {
   
       .portfolio__swiper {
-        
+        aspect-ratio: 16/12;
+        min-height: 460px;
+
         .swiper {
           .pi__details {
             padding: 2rem 1.5rem;
