@@ -33,7 +33,7 @@ export const preSvgAnim = {
     height: "0px",
   },
   entry: {
-    height: "140px",
+    height: "137px",
   }
 }
 

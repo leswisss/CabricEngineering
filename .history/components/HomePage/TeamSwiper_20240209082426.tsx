@@ -14,7 +14,7 @@ import "swiper/css";
 const TeamSwiper = () => {
   const {ref, inView} = useInView({
     threshold: 0.2,
-    triggerOnce: false,
+    triggerOnce: true,
   })
   const SwiperButtons = () => {
     const swiper = useSwiper();
@@ -62,9 +62,10 @@ const TeamSwiper = () => {
       </div>
     );
   };
+  
   return (
     <div ref={ref}>
-      <Swiper  speed={600} className="t-swiper">
+      <Swiper {...swiperSettings} speed={600} className="t-swiper">
         <SwiperButtons />
         {teamData.map((data, i) => (
           <SwiperSlide key={`ss-${i}`}>

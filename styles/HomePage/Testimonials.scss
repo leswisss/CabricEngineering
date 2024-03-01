@@ -1,7 +1,7 @@
 .testimonials{
   width: 100%;
-  background-color: var(--green);
-  color: var(--ivory);
+  background-color: var(--black);
+  color: var(--body-color);
   padding: 4rem 0 5rem;
 
   .testimonials__container{
@@ -17,7 +17,7 @@
 
 
         &:nth-of-type(1){
-          color: var(--ivory);
+          color: var(--gold);
           font-size: calc(var(--normal-font-size) + 0.2rem);
           font-family: var(--optician-font);
 

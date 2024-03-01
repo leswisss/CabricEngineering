@@ -17,7 +17,7 @@
       position: relative;
       border-radius: 15px;
       overflow: hidden;
-      background-color: var(--green-2);
+      background-color: rgb(17, 17, 17);
       display: block;
 
       .service__img {
@@ -59,12 +59,14 @@
 
           .top-title {
             font-size: calc(var(--h2-font-size) + 0.1rem);
+            color: var(--body-color)
           }
         }
 
         .con-bottom {
           display: flex;
           gap: 0.7rem;
+
 
           justify-content: center;
           align-items: center;
@@ -106,10 +108,10 @@
 
         .services__m-content {
           position: relative;
-          background-color: var(--green);
+          background-color: var(--black);
           padding: 3rem 2rem;
           border-radius: 1rem;
-          color: var(--ivory);
+          color: var(--body-color);
           max-width: 500px;
           display: grid;
           gap: 2rem;
@@ -125,7 +127,7 @@
               width: 70%;
 
               .top-subtitle {
-                color: var(--ivory);
+                color: var(--gold);
                 font-size: calc(var(--smaller-font-size) + 0.2rem);
                 font-family: var(--optician-font);
               }
@@ -191,7 +193,7 @@
 
           .con-bottom {
             .arrow-span {
-              border: 1px solid var(--ivory) !important;
+              border: 1px solid var(--body-color) !important;
             }
           }
         }

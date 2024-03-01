@@ -245,14 +245,7 @@ export const numbersData = [
     name: "YEARS OF EXPERIENCE",
     number: "05",
     text: "Founded by Tarh Brice in 2018, CABRIC ENGINEERING is led by Tarh Brice, Forghab Christopher and Celine Dione."
-  },
-  {
-    id: 3,
-    name: "AWARDS AND RECOGNITIONS",
-    number: "10",
-    text: "These accolades are a testament to our dedication while practicing architecture, as we document and discuss our reflections on architecture, culture and arts through publications, academic seminars and presentations."
   }
-
 ]
 
 export const pathRightData = [

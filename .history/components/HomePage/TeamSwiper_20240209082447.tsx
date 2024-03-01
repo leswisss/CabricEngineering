@@ -16,6 +16,7 @@ const TeamSwiper = () => {
     threshold: 0.2,
     triggerOnce: true,
   })
+  
   const SwiperButtons = () => {
     const swiper = useSwiper();
 
@@ -62,6 +63,7 @@ const TeamSwiper = () => {
       </div>
     );
   };
+
   return (
     <div ref={ref}>
       <Swiper {...swiperSettings} speed={600} className="t-swiper">

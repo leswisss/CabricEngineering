@@ -17,13 +17,13 @@ const HomeHero = () => {
       <div className="home__container">
         <div className="container">
           <h3>
-            Global Architectural Company Building An
+            Global Architectural Agency Building An
             <br />
-            Eco-Friendly Future Through Innovative Techniques
+            Eco-Friendly Future Through Innovative Techniques.
           </h3>
           <h4>
-            Global Architectural Company Building An Eco-Friendly Future Through
-            Innovative Techniques
+            Global Architectural Agency Building An Eco-Friendly Future Through
+            Innovative Techniques.
           </h4>
         </div>
         <InfiniteMarquee />

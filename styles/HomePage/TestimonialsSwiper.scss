@@ -57,14 +57,14 @@
           width: 100%;
           height: 55%;
           min-height: 55%;
-          background-color: var(--green-2);
+          background-color: rgb(11, 11, 11);
           padding: 1rem 1rem 1.3rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
           border-radius: 10px;
-          color: var(--green);
+          color: var(--body-color);
 
           .testimonial__header {
             display: flex;
@@ -98,7 +98,7 @@
             margin-top: auto;
 
             a {
-              color: var(--green);
+              color: var(--gold);
               text-transform: uppercase;
               font-size: var(--tiny-font-size);
               display: flex;
@@ -107,7 +107,7 @@
               gap: 0.3rem;
 
               svg {
-                color: var(--green);
+                color: var(--gold);
                 font-size: var(--small-font-size);
               }
             }

@@ -56,7 +56,7 @@
             p {
               position: relative;
               display: block;
-              color: var(--green);
+              color: var(--black);
               line-height: 23px;
 
             }
@@ -75,7 +75,8 @@
               span {
                 &:nth-of-type(1) {
                   text-transform: uppercase;
-                  color: var(--green);
+                  color: var(--black);
+                  font-size: var(--small-font-size);
                 }
 
                 &:nth-of-type(2) {
@@ -94,7 +95,7 @@
 
             .a__summary {
               width: 100%;
-              border-bottom: 1px solid var(--green);
+              border-bottom: 1px solid var(--black);
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -104,12 +105,12 @@
               font-weight: var(--font-medium);
 
               &:nth-of-type(1) {
-                border-top: 1px solid var(--green);
+                border-top: 1px solid var(--black);
               }
 
               span {
                 &:nth-of-type(2) {
-                  color: var(--green);
+                  color: var(--black);
                 }
               }
             }

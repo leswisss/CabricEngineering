@@ -29,7 +29,7 @@ const NumbersDiv = ({data} : {data: numbersProps}) => {
   }
 
   return (
-    <div className={`numbers__div ${data.id===3 ? "last__number" : ""}`} ref={ref} >
+    <div className={`numbers__div ${data.id===2 ? "last__number" : ""}`} ref={ref} >
       <div className="left__section">
         <div className="a-number">{data.number}</div>
         <span>{data.name}</span>

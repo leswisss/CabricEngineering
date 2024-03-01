@@ -55,7 +55,7 @@ const ServicesCard = ({ data, i }: { data: serviceCardProps; i: number }) => {
           </div>
           <div
             className="service__content"
-            style={{ color: activeBack ? "#FBF0E2" : "#035336" }}
+            style={{ color: activeBack ? "var(--body-color)" : "var(--gold)" }}
           >
             <div className="con-top">
               <span className="top-subtitle">{data.subtitle}</span>
@@ -66,8 +66,8 @@ const ServicesCard = ({ data, i }: { data: serviceCardProps; i: number }) => {
                 className="arrow-span"
                 style={{
                   border: activeBack
-                    ? "1px solid #FBF0E2"
-                    : "1px solid #035336",
+                    ? "1px solid var(--body-color)"
+                    : "1px solid var(--gold)",
                 }}
               >
                 <Icon icon="iconoir:arrow-tr" />

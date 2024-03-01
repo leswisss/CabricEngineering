@@ -1,36 +1,11 @@
-"use client";
-export const runtime = "edge";
-
-import React, { useState } from "react";
+import React from "react";
 import {
-  ProjectHero,
-  ProjectAbout,
-  ProjectHorizontal,
-  ProjectDetails,
-  MoreProjects,
-  Preloader,
+  ProjectPageWrapper
 } from "@/components";
 
 const Project = () => {
-  const [onComplete1, setOnComplete1] = useState(false);
-  const [onComplete2, setOnComplete2] = useState(false);
-
   return (
-    <>
-      {!onComplete2 && (
-        <Preloader
-          onComplete1={onComplete1}
-          setOnComplete1={setOnComplete1}
-          onComplete2={onComplete2}
-          setOnComplete2={setOnComplete2}
-        />
-      )}
-      <ProjectHero />
-      <ProjectAbout />
-      <ProjectHorizontal />
-      <ProjectDetails />
-      <MoreProjects />
-    </>
+    <ProjectPageWrapper />
   );
 };
 

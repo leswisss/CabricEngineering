@@ -35,6 +35,10 @@ import AboutTeam from "./AboutPage/AboutTeam";
 import AboutAccolades from "./AboutPage/AboutAccolades";
 import Preloader from "./Preloader";
 
+import HomePageWrapper from "./HomePage/HomePageWrapper";
+import AboutPageWrapper from "./AboutPage/AboutPageWrapper";
+import PortfolioPageWrapper from "./PortfolioPage/PortfolioPageWrapper";
+import ProjectPageWrapper from "./ProjectPage/ProjectPageWrapper";
 
 export {
   Navbar,
@@ -71,5 +75,9 @@ export {
   AboutAccolades,
   ProjectDetails,
   MoreProjects,
-  Preloader
+  Preloader,
+  HomePageWrapper,
+  AboutPageWrapper,
+  PortfolioPageWrapper,
+  ProjectPageWrapper
 }

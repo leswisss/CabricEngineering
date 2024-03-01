@@ -1,10 +1,9 @@
 /*=============== VARIABLES SCSS ===============*/
 :root {
   --header-height: 8rem;
-  --gold: hsl(37, 95%, 61%);
+  --gold: #DF9C2F;
   --text-color: black;
-  --text-color-light:rgb(48, 48, 48);
-  --body-color-2: #e0e0e0;
+  --text-color-light:rgb(45, 45, 45);
   --body-color: #ffffff;
   --green: #035336; 
   --green-2: #B7E9B8;
@@ -101,8 +100,8 @@ select {
 }
 
 body {
-  background-color: var(--ivory);
-  color: var(--green);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 ul {
@@ -127,7 +126,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 

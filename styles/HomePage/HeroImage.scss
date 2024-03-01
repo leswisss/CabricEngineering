@@ -41,10 +41,10 @@
             span {
               position: absolute;
               font-size: var(--smaller-font-size);
-              color: var(--ivory);
+              color: var(--body-color);
               padding: 0.3rem 1.3rem;
               border-radius: 5px;
-              background-color: rgba(251, 240, 226, 0.4);
+              background-color: rgba(255, 255, 255, 0.4);
               top: 70%;
               left: 99%;
               transform: translateY(-50%);
@@ -72,10 +72,10 @@
             span {
               position: absolute;
               font-size: var(--smaller-font-size);
-              color: var(--ivory);
+              color: var(--body-color);
               padding: 0.3rem 1.3rem;
               border-radius: 5px;
-              background-color: rgba(251, 240, 226, 0.4);
+              background-color: rgba(255, 255, 255, 0.4);
               white-space: nowrap;
               top: 0%;
               left: 99.5%;
@@ -104,10 +104,10 @@
             span {
               position: absolute;
               font-size: var(--smaller-font-size);
-              color: var(--ivory);
+              color: var(--body-color);
               padding: 0.3rem 1.3rem;
               border-radius: 5px;
-              background-color: rgba(251, 240, 226, 0.4);
+              background-color: rgba(255, 255, 255, 0.4);
               white-space: nowrap;
               top: 70%;
               left: 99.5%;
@@ -136,10 +136,10 @@
             span {
               position: absolute;
               font-size: var(--smaller-font-size);
-              color: var(--ivory);
+              color: var(--body-color);
               padding: 0.3rem 1.3rem;
               border-radius: 5px;
-              background-color: rgba(251, 240, 226, 0.4);
+              background-color: rgba(255, 255, 255, 0.4);
               white-space: nowrap;
               top: 0;
               left: 0;
@@ -168,10 +168,10 @@
             span {
               position: absolute;
               font-size: var(--smaller-font-size);
-              color: var(--ivory);
+              color: var(--body-color);
               padding: 0.3rem 1.3rem;
               border-radius: 5px;
-              background-color: rgba(251, 240, 226, 0.4);
+              background-color: rgba(255, 255, 255, 0.4);
               white-space: nowrap;
               top: 85%;
               left: 0;
@@ -185,7 +185,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: rgba(251, 240, 226, 0.4);
+          background-color: rgba(255, 255, 255, 0.4);
           width: 1.2rem;
           height: 1.2rem;
           border-radius: 50%;
@@ -196,7 +196,7 @@
             height: 0.7rem;
             border-radius: 50%;
             display: block;
-            background-color: var(--ivory);
+            background-color: var(--body-color);
           }
         }
       }
@@ -211,8 +211,8 @@
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--green);
-    color: var(--ivory);
+    background-color: var(--black);
+    color: var(--body-color);
     padding: 0.5rem 1rem;
     z-index: 10;
     font-family: var(--montserrat2-font);

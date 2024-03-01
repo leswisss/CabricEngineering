@@ -1,8 +1,8 @@
 .home__services {
   margin-top: 5rem;
-  background-color: var(--green);
+  background-color: var(--black);
   width: 100%;
-  color: var(--ivory);
+  color: var(--white);
   padding: 3rem 0 5rem;
 
   .services__container {
@@ -23,7 +23,7 @@
 
         .s-subtitle {
           font-size: calc(var(--normal-font-size) + 0.2rem);
-          color: var(--ivory);
+          color: var(--gold);
           position: relative;
           transition: all 0.7s cubic-bezier(0.87, 0, 0.13, 1);
           font-family: var(--optician-font);
@@ -33,6 +33,7 @@
           font-size: calc(var(--h3-font-size) + 0.3rem);
           position: relative;
           transition: all 0.7s cubic-bezier(0.87, 0, 0.13, 1);
+          color: white;
         }
       }
 
@@ -44,6 +45,7 @@
           line-height: 20px;
           position: relative;
           transition: all 0.7s cubic-bezier(0.87, 0, 0.13, 1);
+          color: white;
         }
       }
     }

@@ -21,7 +21,7 @@
           font-family: var(--optician-font);
           position: relative;
           left: 100px;
-          color: var(--green);
+          color: var(--gold);
           display: block;
         }
       }
@@ -72,14 +72,15 @@
             overflow: hidden;
 
             span {
-              font-size: calc(var(--h3-font-size) - 0.1rem);
+              font-size: calc(var(--h3-font-size) - 0.2rem);
               font-family: var(--montserrat2-font);
               display: block;
               position: relative;
+              color: var(--gold);
             }
 
             p {
-              color: var(--green);
+              color: var(--black);
               line-height: 23px;
               text-align: justify;
               display: block;

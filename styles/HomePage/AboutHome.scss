@@ -8,9 +8,10 @@
       line-height: 40px;
 
       p {
-        font-size: var(--h2-font-size);
+        font-size: var(--h1-font-size);
         font-family: var(--montserrat2-font);
         margin-right: 7.5px;
+        line-height: 1.4;
 
         span {
           opacity: 0.2;
@@ -39,10 +40,10 @@
 
     .h-about__container {
       .split__words {
-        line-height: 32px;
+        line-height: 35px;
 
         p {
-          font-size: calc(var(--h2-font-size) - 0.1rem);
+          font-size: calc(var(--h1-font-size) - 0.35rem);
         }
       }
     }
