@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import IMAGE from "../public/SVG/logoblack.svg"
+import IMAGE from "../public/SVG/concept1brand.svg"
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";

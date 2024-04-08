@@ -94,7 +94,7 @@ button,
 input,
 textarea,
 select {
-  font-family: var(--montserrat-font);
+  font-family: var(--aeonik-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-normal);
 }
@@ -149,7 +149,7 @@ img {
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
   .container {
     max-width: 100%;
     margin: 0 3rem;

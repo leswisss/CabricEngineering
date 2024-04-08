@@ -53,8 +53,8 @@
           gap: 0.7rem;
 
           .top-subtitle {
-            font-family: var(--optician-font);
-            font-size: calc(var(--normal-font-size) + 0.2rem);
+            font-family: var(--aeonikbold-font);
+            font-size: calc(var(--small-font-size) - 0.1rem);
           }
 
           .top-title {
@@ -128,8 +128,8 @@
 
               .top-subtitle {
                 color: var(--gold);
-                font-size: calc(var(--smaller-font-size) + 0.2rem);
-                font-family: var(--optician-font);
+                font-size: calc(var(--small-font-size) - 0.1rem);
+                font-family: var(--aeonikbold-font);
               }
 
               .top-title {
@@ -142,7 +142,7 @@
 
               svg {
                 font-size: var(--h2-font-size);
-                color: var(--ivory);
+                color: var(--body-color);
                 cursor: pointer;
               }
             }
@@ -189,7 +189,7 @@
         }
 
         .service__content {
-          color: var(--ivory) !important;
+          color: var(--body-color) !important;
 
           .con-bottom {
             .arrow-span {

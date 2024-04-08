@@ -12,12 +12,12 @@
     .path__titles {
       display: grid;
       gap: 0.7rem;
-      font-family: var(--montserrat2-font);
+      font-family: var(--aeonik-font);
 
       .subtitle {
-        font-family: var(--optician-font);
+        font-family: var(--aeonikbold-font);
         color: var(--gold);
-        font-size: calc(var(--normal-font-size) + 0.2rem);
+        font-size: calc(var(--normal-font-size) + 0.05rem);
         position: relative;
         transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
       }
@@ -57,7 +57,7 @@
           gap: 1.2rem;
 
           .pc-title {
-            font-family: var(--montserrat2-font);
+            font-family: var(--aeonik-font);
             font-size: calc(var(--h3-font-size) + 0.1rem);
           }
 
@@ -95,7 +95,7 @@
             gap: 1.2rem;
 
             .pc-title {
-              font-family: var(--montserrat2-font);
+              font-family: var(--aeonik-font);
               font-size: var(--h3-font-size);
             }
 
@@ -118,8 +118,8 @@
       color: var(--black);
 
       span {
-        font-size: var(--smaller-font-size);
-        font-family: var(--montserrat2-font);
+        font-size: var(--normal-font-size);
+        font-family: var(--aeonik-font);
       }
     }
   }
@@ -224,6 +224,10 @@
         width: 150px;
         height: 150px;
         margin: 2rem auto 0;
+
+        span {
+          font-size: var(--small-font-size);
+        }
       }
     }
   }

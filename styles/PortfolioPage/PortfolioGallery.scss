@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
 
     .pg__main {
       display: flex;
@@ -83,8 +83,8 @@
 
           span {
             display: block;
-            font-size: var(--small-font-size);
-            font-family: var(--montserrat2-font);
+            font-size: calc(var(--small-font-size) + 0.05rem);
+            font-family: var(--aeonik-font);
             position: relative;
             color: var(--black);
             left: 0;
@@ -94,7 +94,7 @@
 
           p {
             text-transform: uppercase;
-            font-size: var(--small-font-size);
+            font-size: calc(var(--small-font-size) + 0.05rem);
             color: var(--black);
             position: relative;
             left: 0;
@@ -115,7 +115,7 @@
       cursor: pointer;
 
       span {
-        font-size: var(--small-font-size);
+        font-size: calc(var(--small-font-size) + 0.05rem);
         text-transform: uppercase;
       }
     }
@@ -171,10 +171,6 @@
       .pg__pagination {
         width: 140px;
         height: 140px;
-
-        span {
-          font-size: var(--smaller-font-size);
-        }
       }
     }
   }

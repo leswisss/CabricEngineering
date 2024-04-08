@@ -11,7 +11,7 @@
 
     .ph__bold{
       font-size: calc(var(--h1-font-size) + 3rem);
-      font-family: var(--montserrat2-font);
+      font-family: var(--aeonik-font);
       text-transform: uppercase;
     }
 
@@ -27,14 +27,14 @@
 
         span{
           cursor: pointer;
-          font-size: var(--small-font-size);
+          font-size: calc(var(--small-font-size) + 0.05rem);
           text-transform: uppercase;
           transition: all 1s ease;
-          font-family: var(--montserrat-font);
+          font-family: var(--aeonik-font);
           opacity: 0.5;
 
           &.active__filter{
-            font-family: var(--montserrat2-font);
+            font-family: var(--aeonik-font);
             opacity: 1;
           }
         }
@@ -62,15 +62,6 @@
           width: 100%;
           gap: 0rem;
           justify-content: space-between;
-  
-          span{
-            font-size: var(--smaller-font-size);
-  
-            &.active__filter{
-              font-family: var(--montserrat2-font);
-              opacity: 1;
-            }
-          }
         }
       }
     }

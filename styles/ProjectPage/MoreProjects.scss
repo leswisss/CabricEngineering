@@ -10,7 +10,7 @@
       span {
         display: block;
         font-size: var(--h3-font-size);
-        font-family: var(--montserrat2-font);
+        font-family: var(--aeonikbold-font);
       }
     }
 
@@ -47,7 +47,7 @@
           span {
             display: block;
             text-transform: uppercase;
-            color: var(--ivory);
+            color: var(--body-color);
             z-index: 2;
             position: absolute;
             top: 50%;
@@ -80,7 +80,7 @@
             span {
               opacity: 1;
               font-size: calc(var(--h3-font-size) + 0.2rem);
-              font-family: var(--montserrat2-font);
+              font-family: var(--aeonik-font);
             }
           }
         }

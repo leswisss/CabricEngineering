@@ -43,13 +43,13 @@
 
               &:nth-of-type(1) {
                 width: max-content;
-                height: 33.6px;
+                height: 31.2px;
                 margin-bottom: 0.3rem;
               }
 
               &:nth-of-type(2), &:nth-of-type(3) {
                 width: max-content;
-                height: 19.2px;
+                height: 18.5px;
               }
 
               .project__name,
@@ -170,7 +170,7 @@
             display: grid;
             place-items: center;
             border-radius: 50%;
-            border: 1px solid var(--ivory);
+            border: 1px solid var(--body-color);
 
             span {
               font-size: var(--small-font-size);
@@ -180,7 +180,7 @@
 
           .pn__swiper {
             width: max-content;
-            height: 33.6px;
+            height: 31.2px;
             overflow: hidden;
 
             .pn__swrapper {
@@ -268,7 +268,7 @@
         span {
           text-transform: uppercase;
           font-size: var(--small-font-size);
-          font-family: var(--montserrat2-font);
+          font-family: var(--aeonik-font);
           position: relative;
           display: block;
         }
@@ -291,7 +291,11 @@
               .project__overflow {
   
                 &:nth-of-type(1) {
-                  height: 27.2px;
+                  height: 25.6px;
+                }
+
+                &:nth-of-type(2), &:nth-of-type(3) {
+                  height: 17.7px;
                 }
               }
             }
@@ -313,7 +317,7 @@
             }
   
             .pn__swiper {
-              height: 27.2px;
+              height: 25.6px;
             }
           }
         }
@@ -355,49 +359,7 @@
         .swiper {
           .pi__details {
             padding: 2.5rem 2rem;
-  
-            .pid-top {
-  
-              .project__overflow {
-  
-                &:nth-of-type(1) {
-                  height: 27.2px;
-                }
-              }
-            }
           }
-        }
-      }
-  
-      .portfolio__images {
-  
-        .port__image-left,
-        .port__image-right {
-
-          .pimage__overlay {
-
-            a{
-              width: 150px;
-              height: 150px;
-
-            }
-  
-            .pn__swiper {
-              height: 27.2px;
-            }
-          }
-        }
-      }
-    }
-  
-    .pc-bottom {
-      .pcb__left {
-        width: 50%;
-
-  
-        .link__button {
-          width: 200px;
-          height: 200px;
         }
       }
     }
@@ -419,7 +381,7 @@
               .project__overflow {
   
                 &:nth-of-type(1) {
-                  height: 24px;
+                  height: 23.2px;
                 }
 
                 .project__name {
@@ -454,7 +416,7 @@
             }
   
             .pn__swiper {
-              height: 24px;
+              height: 23.2px;
 
               .pn__swrapper {
                 span {
@@ -502,11 +464,11 @@
               .project__overflow {
   
                 &:nth-of-type(1) {
-                  height: 22.4px;
+                  height: 20.8px;
                 }
 
                 &:nth-of-type(2), &:nth-of-type(3)  {
-                  height: 18.4px;
+                  height: 16.8px;
                 }
               }
             }
@@ -523,7 +485,7 @@
 
   
             .pn__swiper {
-              height: 22.4px;
+              height: 20.8px;
             }
           }
         }
@@ -548,7 +510,7 @@
               .project__overflow {
   
                 &:nth-of-type(1) {
-                  height: 40px;
+                  height: 37.6833px;
                   margin-bottom: 0;
                 }
 

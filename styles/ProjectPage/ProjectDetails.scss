@@ -25,8 +25,8 @@
           overflow: hidden;
 
           span{
-            font-family: var(--montserrat2-font);
-            font-size: var(--h3-font-size);
+            font-family: var(--aeonikbold-font);
+            font-size: calc(var(--normal-font-size) + 0.05rem);
             display: block;
             position: relative;
           }
@@ -90,7 +90,7 @@
               position: relative;
               display: block;
               width: 80%;
-              font-family: var(--montserrat2-font);
+              font-family: var(--aeonikbold-font);
               font-size: var(--small-font-size);
             }
 
@@ -109,6 +109,7 @@
 
               span{
                 width: max-content;
+                font-size: var(--aeonikbold-font);
               }
             }
           }

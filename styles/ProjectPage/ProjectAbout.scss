@@ -21,8 +21,8 @@
         p {
           position: relative;
           display: block;
-          font-size: var(--small-font-size);
-          font-family: var(--montserrat2-font);
+          font-size: var(--normal-font-size);
+          font-family: var(--aeonik-font);
         }
       }
 
@@ -36,9 +36,9 @@
           overflow: hidden;
 
           span {
-            font-family: var(--montserrat2-font);
+            font-family: var(--aeonikbold-font);
             text-transform: uppercase;
-            font-size: var(--h3-font-size);
+            font-size: calc(var(--normal-font-size) + 0.05rem);
             display: block;
             position: relative;
           }
@@ -82,7 +82,7 @@
                 &:nth-of-type(2) {
                   text-transform: capitalize;
                   font-size: var(--normal-font-size);
-                  font-family: var(--optician-font);
+                  font-family: var(--aeonikbold-font);
                   font-weight: var(--font-medium);
                 }
               }
@@ -100,8 +100,8 @@
               justify-content: space-between;
               align-items: center;
               padding: 1.2rem 0;
-              font-size: var(--smaller-font-size);
-              font-family: var(--montserrat2-font);
+              font-size: var(--small-font-size);
+              font-family: var(--aeonik-font);
               font-weight: var(--font-medium);
 
               &:nth-of-type(1) {

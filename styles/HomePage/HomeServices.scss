@@ -18,15 +18,15 @@
       .top__left {
         display: grid;
         gap: 0.7rem;
-        font-family: var(--montserrat2-font);
+        font-family: var(--aeonik-font);
         width: 30%;
 
         .s-subtitle {
-          font-size: calc(var(--normal-font-size) + 0.2rem);
+          font-size: calc(var(--normal-font-size) + 0.05rem);
           color: var(--gold);
           position: relative;
           transition: all 0.7s cubic-bezier(0.87, 0, 0.13, 1);
-          font-family: var(--optician-font);
+          font-family: var(--aeonikbold-font);
         }
 
         .s-title {
@@ -39,7 +39,7 @@
 
       .top__right {
         width: 30%;
-        font-size: var(--small-font-size);
+        font-size: var(--normal-font-size);
 
         p {
           line-height: 20px;
@@ -139,7 +139,7 @@
 
         .top__right {
           width: 100%;
-          font-size: var(--small-font-size);
+          font-size: var(--normal-font-size);
         }
       }
     }

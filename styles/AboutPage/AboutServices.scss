@@ -27,8 +27,8 @@
 
         span{
           display: block;
-          font-size: calc(var(--normal-font-size) + 0.2rem);
-          font-family: var(--optician-font);
+          font-size: calc(var(--normal-font-size) + 0.05rem);
+          font-family: var(--aeonikbold-font);
           color: var(--gold);
           position: relative;
         }
@@ -38,6 +38,7 @@
           display: block;
           position: relative;
           will-change: transform;
+          font-family: var(--aeonik-font);
         }
       }
     }

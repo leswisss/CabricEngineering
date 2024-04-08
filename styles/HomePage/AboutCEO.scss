@@ -41,7 +41,7 @@
     .first__text {
       display: flex;
       flex-wrap: wrap;
-      line-height: 27px;
+      line-height: 25px;
 
       .text__overflow {
         overflow: hidden;
@@ -75,7 +75,7 @@
       width: 47%;
 
       .first__text {
-        line-height: 25px;
+        line-height: 23px;
 
         .text__overflow {
           font-size: calc(var(--h3-font-size) - 0.05rem);
@@ -89,7 +89,7 @@
   .about__ceo {
     .ceo__desc {
       .first__text {
-        line-height: 22px;
+        line-height: 20px;
 
         .text__overflow {
           font-size: calc(var(--h3-font-size) - 0.2rem);

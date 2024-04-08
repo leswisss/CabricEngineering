@@ -10,15 +10,15 @@
       gap: 0.7rem;
 
       span{
-        font-family: var(--montserrat2-font);
+        font-family: var(--aeonik-font);
         transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
         display: block;
         position: relative;
 
         &:nth-of-type(1){
           color: var(--gold);
-          font-size: calc(var(--normal-font-size) + 0.2rem);
-          font-family: var(--optician-font);
+          font-size: calc(var(--normal-font-size) + 0.05rem);
+          font-family: var(--aeonikbold-font);
         }
 
         &:nth-of-type(2){

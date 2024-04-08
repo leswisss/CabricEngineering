@@ -14,14 +14,14 @@
         width: 30%;
         display: grid;
         gap: 0.7rem;
-        font-family: var(--montserrat2-font);
+        font-family: var(--aeonik-font);
 
         .hp-subtitle {
-          font-size: calc(var(--normal-font-size) + 0.2rem);
+          font-size: calc(var(--normal-font-size) + 0.05rem);
           color: var(--gold);
           position: relative;
           transition: all 0.7s cubic-bezier(0.76, 0, 0.24, 1);
-          font-family: var(--optician-font);
+          font-family: var(--aeonikbold-font);
         }
 
         .hp-title {
@@ -38,7 +38,7 @@
         align-items: flex-end;
 
         justify-content: center;
-        font-family: var(--montserrat2-font);
+        font-family: var(--aeonik-font);
 
         span {
           display: block;

@@ -1,7 +1,7 @@
 header {
   width: 100%;
   height: var(--header-height);
-  font-family: var(--montserrat2-font);
+  font-family: var(--aeonik-font);
   position: fixed;
   top: 0;
   left: 0;
@@ -26,8 +26,8 @@ header {
 
         .logo__image {
           position: relative;
-          width: 70px;
-          aspect-ratio: 60/74.5059;
+          width: 200px;
+          aspect-ratio: 287.1628 /74.5059;
 
           img {
             object-fit: cover;
@@ -37,9 +37,9 @@ header {
 
       a,
       .nav__menu {
-        font-family: var(--montserrat2-font);
+        font-family: var(--aeonik-font);
         color: var(--text-color);
-        font-size: calc(var(--normal-font-size) + 0.1rem);
+        font-size: calc(var(--normal-font-size) + 0.3rem);
       }
 
       .nav__menu {
@@ -67,9 +67,13 @@ header {
           transform: translate(0%, -50%);
 
           .logo__image {
-            width: 50px;
-            aspect-ratio: 60/74.5059;
+            width: 130px;
           }
+        }
+
+        a,
+        .nav__menu {
+          font-size: calc(var(--normal-font-size) + 0.2rem);
         }
 
         .portfolio__button {

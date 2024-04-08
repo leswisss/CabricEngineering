@@ -233,20 +233,6 @@ export const sidebarcontent = [
   }
 ]
 
-export const numbersData = [
-  {
-    id: 1,
-    name: "PROJECTS COMPLETED",
-    number: "20",
-    text: "Cabric's projects encompass meticulously crafted 3D architectural plans for both bungalow and duplex structures that reflect a harmonious blend of aesthetics, functionality and sustainability."
-  },
-  {
-    id: 2,
-    name: "YEARS OF EXPERIENCE",
-    number: "05",
-    text: "Founded by Tarh Brice in 2018, CABRIC ENGINEERING is led by Tarh Brice, Forghab Christopher and Celine Dione."
-  }
-]
 
 export const pathRightData = [
   {

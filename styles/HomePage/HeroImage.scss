@@ -215,7 +215,7 @@
     color: var(--body-color);
     padding: 0.5rem 1rem;
     z-index: 10;
-    font-family: var(--montserrat2-font);
+    font-family: var(--aeonik-font);
     letter-spacing: 0.8px;
     display: none;
     justify-content: center;
@@ -224,9 +224,9 @@
     opacity: 0;
     visibility: hidden;
 
-    span {
+    .spannn {
       text-transform: uppercase;
-      font-size: calc(var(--smaller-font-size) - 0.2rem);
+      font-size: calc(var(--small-font-size) - 0.2rem) !important;
     }
 
     svg {

@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { numbersProps } from '@/types'
 import "../../styles/HomePage/NumbersDiv.scss"
+import { spawn } from 'child_process';
 
 const NumbersDiv = ({data} : {data: numbersProps}) => {
   const ref = useRef<HTMLDivElement>(null)
@@ -28,10 +29,15 @@ const NumbersDiv = ({data} : {data: numbersProps}) => {
     })
   }
 
+
   return (
     <div className={`numbers__div ${data.id===2 ? "last__number" : ""}`} ref={ref} >
       <div className="left__section">
-        <div className="a-number">{data.number}</div>
+        <div className="a-number">
+          {
+            data.number < 10 ? `0${data.number}` : data.number
+          }
+        </div>
         <span>{data.name}</span>
       </div>
       <div className="right__section">

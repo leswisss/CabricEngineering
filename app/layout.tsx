@@ -3,28 +3,18 @@ import localFont from 'next/font/local'
 import { Navbar, Footer } from '@/components'
 import "../styles/globals.scss"
 
-const autaut = localFont({
-  src: './AutautGrotesk-Medium.ttf',
-  display: 'swap',
-  variable: '--autaut-font'
+
+
+const aeonik = localFont({
+  src: "./AeonikProTRIAL-Regular.ttf",
+  display: "swap",
+  variable: "--aeonik-font"
 })
 
-const montserrat = localFont({
-  src: './MontserratRegular.ttf',
+const aeonikBold = localFont({
+  src: "./AeonikProTRIAL-Bold.ttf",
   display: "swap",
-  variable: "--montserrat-font"
-})
-
-const montserrat2 = localFont({
-  src: './Montserrat.ttf',
-  display: "swap",
-  variable: "--montserrat2-font"
-})
-
-const optician = localFont({
-  src: './Optiker-K.ttf',
-  display: "swap",
-  variable: "--optician-font"
+  variable: "--aeonikbold-font"
 })
 
 export const metadata: Metadata = {
@@ -42,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${autaut.variable} ${montserrat.variable} ${montserrat2.variable} ${optician.variable}`}>
+      <body className={`${aeonik.variable} ${aeonikBold.variable}`}>
         <>
           <Navbar/>
           {children}

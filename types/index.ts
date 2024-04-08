@@ -19,7 +19,7 @@ export interface sideBarProps {
 export interface numbersProps {
   id: number,
   name: string,
-  number: string,
+  number: number,
   text: string
 }
 

@@ -97,19 +97,17 @@
         }
 
         span {
-          font-size: var(--small-font-size);
-          font-weight: var(--font-light);
+          font-size: var(--normal-font-size);
 
           &.s-location {
-            width: 85%;
+            width: 90%;
           }
         }
 
         a {
           text-decoration: underline;
-          font-size: var(--smaller-font-size);
+          font-size: var(--normal-font-size);
           color: var(--black);
-          font-weight: var(--font-light);
         }
       }
 
@@ -419,11 +417,15 @@
           }
 
           span {
-            font-size: var(--small-font-size);
+            font-size: var(--normal-font-size);
 
             &.s-location {
               width: max-content;
             }
+          }
+
+          a{
+            font-size: var(--normal-font-size);
           }
         }
 
@@ -461,7 +463,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .sidebar {
     .sidebar__container {
       .right__section {

@@ -17,8 +17,8 @@
         height: 100px;
 
         span {
-          font-size: calc(var(--normal-font-size) + 0.2rem);
-          font-family: var(--optician-font);
+          font-size: calc(var(--normal-font-size) + 0.05rem);
+          font-family: var(--aeonikbold-font);
           position: relative;
           left: 100px;
           color: var(--gold);
@@ -49,8 +49,8 @@
         height: 100px;
 
         p {
-          font-size: calc(var(--h3-font-size) + 0.2rem);
-          font-family: var(--montserrat2-font);
+          font-size: calc(var(--h3-font-size) + 0.05rem);
+          font-family: var(--aeonik-font);
           line-height: 32px;
           display: block;
           position: relative;
@@ -73,7 +73,7 @@
 
             span {
               font-size: calc(var(--h3-font-size) - 0.2rem);
-              font-family: var(--montserrat2-font);
+              font-family: var(--aeonikbold-font);
               display: block;
               position: relative;
               color: var(--gold);

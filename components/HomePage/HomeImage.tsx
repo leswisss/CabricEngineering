@@ -120,7 +120,7 @@ const HomeImage = () => {
         </div>
         <div className="sscroll-guide" ref={dragRef}>
           <Icon className="svg-1" icon="carbon:arrow-up" />{" "}
-          <span>DRAG IMAGE</span>{" "}
+          <span className="spannn">DRAG IMAGE</span>{" "}
           <Icon className="svg-2" icon="carbon:arrow-up" />
         </div>
       </div>
