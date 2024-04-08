@@ -30,7 +30,7 @@ const PathLeft = () => {
         <span className="pc-text">
           Our foremost goal is to revolutionize the world of architecture and
           construction by embracing a holistic approach that marries
-          sustainability, innovation, aesthetics and resilience.
+          sustainability, innovation, aesthetics and durability.
         </span>
       </div>
     </>

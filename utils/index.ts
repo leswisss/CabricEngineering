@@ -239,7 +239,7 @@ export const pathRightData = [
     id: 1,
     name: "MISSION",
     image: PATH2,
-    text: "Our commitment to eco-friendly practices is at the heart of our mission.",
+    text: "Building a Sustainable and Eco-friendly Future through Innovative Construction solutions.",
     delay: "0.7s"
   }, 
 
@@ -247,7 +247,7 @@ export const pathRightData = [
     id: 2,
     name: "VALUES",
     image: PATH3,
-    text: "Central to our values is our unwavering commitment to environmental responsibility.",
+    text: "Central to our values is our commitment to sustainability, safety, and durability, fostered through collaboration and unwavering integrity.",
     delay: "1.3s"
   }
 ]
