@@ -17,12 +17,12 @@ const HomeHero = () => {
       <div className="home__container">
         <div className="container">
           <h3>
-            Global Architectural Agency Building A Sustainable Future
+            Global Architectural Agency Building A Sustainable and
             <br />
-            Through Innovative  and Eco-friendly Construction Solutions.
+            Eco-friendly Future Through Innovative Construction Solutions.
           </h3>
           <span className="spannerr">
-            Global Architectural Agency Building A Sustainable Future Through Innovative and Eco-friendly Construction Solutions.
+            Global Architectural Agency Building A Sustainable and Eco-friendly Future Through Innovative Construction Solutions.
           </span>
         </div>
         <InfiniteMarquee />
