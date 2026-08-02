@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+
 export async function generateStaticParams() {
   return generateI18nStaticParams();
 }
@@ -87,7 +88,6 @@ export default async function RootLayout({
           resources={resources}
         >
           {children}
-          <CookieConsent />
         </I18nProvider>
       </body>
     </html>

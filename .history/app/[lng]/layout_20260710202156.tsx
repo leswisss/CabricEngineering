@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import CookieConsent from "@/components/ReUsables/CookieConsent";
 import "../../styles/globals.scss";
 
 import {
@@ -34,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 }
+
 
 export async function generateStaticParams() {
   return generateI18nStaticParams();
@@ -87,7 +87,6 @@ export default async function RootLayout({
           resources={resources}
         >
           {children}
-          <CookieConsent />
         </I18nProvider>
       </body>
     </html>
