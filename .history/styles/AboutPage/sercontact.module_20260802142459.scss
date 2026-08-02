@@ -1,0 +1,82 @@
+.ser__section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.ser__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.seri {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ser__inner {
+  width: 100%;
+  height: 135%;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.ser__blur {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ser__container {
+  padding: 7rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.ser__p {
+  color: white;
+  font-size: calc(var(--50-font-size) + 1rem);
+  line-height: 1.05;
+  letter-spacing: -2%;
+  text-align: center;
+  width: 60%;
+}
+
+//RESPONSIVE DESIGN
+@media screen and (max-width: 1110px) {
+  .ser__p {
+    font-size: calc(var(--50-font-size) + 1rem);
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .ser__p {
+    font-size: calc(var(--50-font-size) + 0.6rem);
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .ser__p {
+    font-size: calc(var(--50-font-size) + 0.6rem);
+    width: 90%;
+  }
+}
+

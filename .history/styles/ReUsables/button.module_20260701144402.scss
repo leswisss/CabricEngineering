@@ -1,0 +1,18 @@
+.button__wrapper{
+  width: max-content;
+  padding: 0.75rem 1.2rem;
+  background-color: var(--background);
+  color: var(--textColor);
+  border-radius: 50px;
+}
+
+.btext{
+  color: var(--color);
+}
+
+.round__border{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color);
+}

@@ -1,0 +1,264 @@
+.hs__section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.hs__left {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.hs__wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.hs__right {
+  width: 50%;
+  padding: 3.5rem 0 2rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+
+.hsr__span {
+  margin-left: calc((100vw - 1440px) / 2);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: white;
+
+    .acc__nc {
+      color: black;
+    }
+
+    .side {
+      color: black;
+      opacity: 0.75;
+    }
+
+    .line {
+      background-color: black;
+    }
+
+    .para {
+      p {
+        color: black;
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &:nth-of-type(1) {
+    border-top: none;
+  }
+
+  &.active__acc {
+    .acc__oc {
+      transform: rotate(90deg);
+    }
+
+    .toperr {
+      background-color: transparent;
+    }
+
+    .acc__bottom {
+      max-height: 400px;
+    }
+  }
+}
+
+.acc__top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem calc((100vw - 1440px) / 2);
+  font-size: calc(var(--30-font-size) - 0.35rem);
+  cursor: pointer;
+}
+
+.acc__nc {
+  width: 90%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.side {
+  color: white;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+}
+
+.acc__oc {
+  position: relative;
+  transform: none;
+  transition: all 0.5s ease;
+}
+
+.line {
+  width: 24px;
+  height: 0.1rem;
+  position: relative;
+  background-color: white;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.toper {
+  width: 0.1rem !important;
+  height: 24px !important;
+  position: relative;
+  background-color: white;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.toperr {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.5s ease;
+}
+
+.acc__bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc((100vw - 1440px) / 2);
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease;
+}
+
+.para {
+  width: 90%;
+  margin-left: auto;
+
+  p {
+    width: 90%;
+    line-height: 1.3;
+    color: white;
+    opacity: 0.5;
+    padding-bottom: 1.5rem;
+    transition: all 0.5s ease;
+    text-wrap: pretty;
+  }
+}
+
+//Responsive Design
+@media screen and (max-width: 1440px) {
+  .acc__top {
+    padding: 1.5rem 1.5rem;
+    font-size: calc(var(--30-font-size) - 0.35rem);
+  }
+
+  .acc__oc {
+    margin-right: 0.6rem;
+  }
+
+  .hsr__span {
+    margin-left: 1.5rem;
+  }
+
+  .acc__bottom {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .acc__top {
+    font-size: calc(var(--30-font-size) - 0.6rem);
+  }
+
+  .line {
+    width: 20px;
+  }
+
+  .toper {
+    height: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .acc__top {
+    font-size: calc(var(--30-font-size) - 0.2rem);
+  }
+
+  .para {
+    p {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hs__section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .hs__left {
+    width: 100%;
+    aspect-ratio: 16/10;
+  }
+
+  .hs__right {
+    width: 100%;
+    gap: 7rem;
+  }
+
+  .acc__top {
+    font-size: calc(var(--30-font-size) + 0.2rem);
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .acc__top {
+    padding: 1.5rem 1.2rem;
+    font-size: calc(var(--30-font-size) - 0.35rem);
+  }
+
+  .acc__oc {
+    margin-right: 0.6rem;
+  }
+
+  .hsr__span {
+    margin-left: 1.2rem;
+  }
+
+  .acc__bottom {
+    padding: 0 1.2rem;
+  }
+}

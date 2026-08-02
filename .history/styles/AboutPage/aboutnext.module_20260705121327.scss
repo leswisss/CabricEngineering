@@ -1,0 +1,18 @@
+.an__section{
+  padding: 7rem 0 3rem;
+  width: 100%;
+  height: auto;
+}
+
+.an__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.an__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}

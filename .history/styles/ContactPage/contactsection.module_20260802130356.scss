@@ -1,0 +1,203 @@
+.con__section {
+  width: 100%;
+  height: auto;
+  padding: 7rem 0 6rem;
+}
+
+.con__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.con__right {
+  width: 50%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form__top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.phoneinput,
+.form__in {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.phoneinputError {
+  // targets the flag dropdown on the left
+  :global(.flag-dropdown) {
+    border-top: 1px solid red !important;
+    border-left: 1px solid red !important;
+    border-bottom: 1px solid red !important;
+  }
+
+  // targets the actual input field the library renders
+  :global(.form-control) {
+    border: 1px solid red !important;
+  }
+}
+
+.error {
+  font-size: calc(var(--normal-font-size) - 0.1rem);
+  color: rgb(255, 29, 29);
+}
+
+.label {
+  text-transform: none;
+  font-size: calc(var(--normal-font-size));
+  color: black;
+  font-family: var(--medium-font);
+}
+
+.pri__button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tickbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ticktop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tick {
+  min-width: 20px;
+  min-height: 20px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+
+  &.active {
+    .tbutton {
+      opacity: 1;
+    }
+  }
+}
+
+.tbutton {
+  width: 12px;
+  height: 12px;
+  background-color: var(--gold);
+  border-radius: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.agree {
+  // display: flex;
+  // align-items: center;
+  // gap: 0.3rem;
+  // color: var(--black);
+
+  a {
+    text-decoration: underline;
+    color: black;
+    font-family: var(--medium-font);
+  }
+}
+
+.checkbox__error {
+  font-size: calc(var(--normal-font-size) - 0.125rem);
+  color: rgb(255, 0, 0);
+}
+
+.button__wrapper {
+  width: max-content;
+  padding: 0.85rem 1.2rem 0.9rem;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: var(--gold);
+    .btext {
+      color: white;
+    }
+
+    .round__border {
+      border: 1px solid transparent;
+    }
+
+    .round__inner {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.btext {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.round__border {
+  position: relative;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: 1px solid white;
+  border-radius: 0.625rem;
+  margin-top: 0.1rem;
+  transition: all 0.5s ease;
+}
+
+.round__inner {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s ease;
+}
+
+//RESPONSIVE DESIGN
+@media screen and (max-width: 850px) {
+  .con__container {
+    flex-direction: column;
+    gap: 3.5rem;
+    justify-content: flex-start;
+  }
+
+  .con__right {
+    width: 100%;
+  }
+
+  .con__section {
+    padding: 6.25rem 0 5.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form__top {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+}

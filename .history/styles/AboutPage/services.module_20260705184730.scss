@@ -1,0 +1,18 @@
+.ser__section{
+  width: 100%;
+  padding: 7rem 0 6rem;
+}
+
+.ser__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ser__right{
+  width: 50%;
+  color: black;
+  font-size: calc(var(--50-font-size) + 0.4rem);
+  line-height: 1.05;
+  letter-spacing: -2%;
+}

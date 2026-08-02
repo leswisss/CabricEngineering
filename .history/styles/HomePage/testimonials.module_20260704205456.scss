@@ -1,0 +1,45 @@
+.testi__section {
+  width: 100%;
+  height: auto;
+}
+
+.testi__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.testi__top {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testi__p {
+  color: black;
+  font-size: calc(var(--50-font-size) + 0.4rem);
+  line-height: 1.05;
+  letter-spacing: -2%;
+}
+
+.testi__bottom {
+  width: 100%;
+}
+
+.testi__wrapper {
+  width: 100%;
+}
+
+.testi__box {
+  width: 100%;
+  aspect-ratio: 580/420;
+  padding: 2rem 1.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  ju
+}

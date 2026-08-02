@@ -1,0 +1,13 @@
+import React from "react";
+import { getBlur } from "@/lib/getBlur";
+import { HomePageWrapper } from "@/components";
+
+
+//PlaceHolders Images
+const blur = await getBlur("03_q2fklh.jpg");
+
+const Home = () => {
+  return <HomePageWrapper blur={blur}/>;
+};
+
+export default Home;

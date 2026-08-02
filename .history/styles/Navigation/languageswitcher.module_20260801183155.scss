@@ -1,0 +1,13 @@
+.languageselector {
+  padding: 0.85rem 1.2rem 0.9rem;
+  color: black;
+  text-transform: uppercase;
+  font-size: calc(var(--normal-font-size) - 0.05rem);
+  border-radius: 50px;
+  font-family: var(--medium-font);
+  background-color: white;
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+

@@ -1,0 +1,17 @@
+.roundedtext{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.round{
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+}
+
+.ptext{
+  font-size: calc(var(--normal-font-size) - 0.15rem);
+  te
+}

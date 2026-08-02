@@ -1,0 +1,158 @@
+.an__section {
+  padding: 7rem 0 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.an__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.an__left {
+  margin-top: 0.5rem; ////Notice this when on mobile to reduce the gap to the hero
+}
+
+.an__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.an__p {
+  color: black;
+  font-size: calc(var(--50-font-size) - 0.2rem);
+  line-height: 1.1;
+  letter-spacing: -2%;
+}
+
+.an__p2,
+.an__p3 {
+  line-height: 1.3;
+  width: 80%;
+}
+
+.an__p2 {
+  margin-top: 1rem;
+}
+
+.an__p4 {
+  font-size: calc(var(--normal-font-size) - 0.2rem);
+  text-transform: uppercase;
+  font-family: var(--ttnormal);
+  letter-spacing: 10%;
+  color: black;
+  margin-top: 1rem;
+}
+
+.vismiss {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  margin-top: 7rem;
+}
+
+.miss {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 2.5rem 0;
+}
+
+.miss__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.miss__h3 {
+  width: 35%;
+  color: black;
+  font-size: calc(var(--50-font-size) - 0.2rem);
+  line-height: 1.1;
+  letter-spacing: -2%;
+  font-weight: 300;
+}
+
+.miss__right {
+  width: 50%;
+
+  p {
+    width: 85%;
+    line-height: 1.3;
+  }
+}
+
+//RESPONSIVE SCREEN
+@media screen and (max-width: 1110px) {
+  .an__p {
+    font-size: calc(var(--50-font-size) - 0.35rem);
+  }
+
+  .miss__h3 {
+    font-size: calc(var(--50-font-size) - 0.35rem);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .an__container {
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: flex-start;
+  }
+
+  .an__p2,
+  .an__p3 {
+    line-height: 1.3;
+    width: 100%;
+  }
+
+  .an__right {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .an__section {
+    padding: 6.25rem 0 2rem;
+  }
+
+  .miss__container {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .miss__h3 {
+    width: 100%;
+  }
+
+  .miss__right {
+    width: 100%;
+
+    p {
+      width: 85%;
+    }
+  }
+
+  .miss {
+    padding: 2rem 0;
+  }
+
+  .vismiss {
+    margin-top: 5.25rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .an__p {
+    font-size: calc(var(--50-font-size) - 0.5rem);
+  }
+
+  .miss__h3 {
+    font-size: calc(var(--50-font-size) - 0.5rem);
+  }
+}

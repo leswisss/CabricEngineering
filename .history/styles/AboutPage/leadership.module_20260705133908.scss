@@ -1,0 +1,30 @@
+.lead__section{
+  width: 100%;
+  height: auto;
+}
+
+.lead__container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.lead__right{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px
+}
+
+.lead__wrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.image__wrap{
+  width: 100%;
+  aspect-ratio: 450/560;
+}

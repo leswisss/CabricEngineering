@@ -1,0 +1,18 @@
+.roundtext{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.round{
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+}
+
+.ptext{
+  font-size: calc(var(--normal-font-size) - 0.1rem);
+  text-transform: uppercase;
+  font-family: var(--ttnormal);
+}

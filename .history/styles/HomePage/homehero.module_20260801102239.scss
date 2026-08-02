@@ -1,0 +1,161 @@
+.hh__wrapper {
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  max-height: 950px;
+}
+
+.home__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.background__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home__text {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.main__text {
+  width: 100%;
+  height: auto;
+}
+
+.h__h1 {
+  text-align: center;
+  color: white;
+  width: 85%;
+  font-size: calc(var(--70-font-size) + 0.5rem);
+  font-weight: 200;
+  margin: 0 auto;
+  line-height: 1.1;
+  letter-spacing: -2%;
+}
+
+.hero__bottom {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ptop {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hb__left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hh__p {
+  color: white;
+  width: 65%;
+  line-height: 1.3;
+}
+
+//Responsive Design
+@media screen and (max-width: 1250px) {
+  .h__h1 {
+    width: 95%;
+    font-size: calc(var(--70-font-size) + 0.5rem);
+  }
+
+  .hh__p {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hh__wrapper {
+    height: auto;
+    max-height: none;
+    // min-height: 100vh;
+  }
+
+  .home__image {
+    position: absolute;
+    inset: 0;
+  }
+
+  .background__image,
+  .background {
+    position: absolute;
+    inset: 0;
+  }
+
+  .home__text {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 25rem 0 4rem;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .h__h1 {
+    width: 100%;
+    font-size: calc(var(--70-font-size) + 0.3rem);
+  }
+
+  .hh__p {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .ptop {
+    padding-top: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .hb__left {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .hh__p {
+    width: 100%;
+  }
+}

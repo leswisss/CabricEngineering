@@ -1,0 +1,29 @@
+.gallery {
+  width: 100%;
+  padding: 6rem 0 7rem;
+}
+
+.gal__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gal__image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gal__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+}

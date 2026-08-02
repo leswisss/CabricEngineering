@@ -1,0 +1,27 @@
+import React from "react";
+import styles from "../../styles/ReUsables/dropinput.module.scss";
+
+interface DataProps {
+  id: number;
+  order: number;
+  label: string;
+  error: string;
+  options: {
+    id: string;
+    name: string;
+  }[];
+}
+
+const DropInput = ({ data }: { data: DataProps }) => {
+  return (
+    <div className={styles.input__wrap}>
+      <span className={styles.label}>{data.label}</span>
+      <div className={styles.dropdown}>
+        <div className={styles.drop__section}></div>
+      </div>
+      <span className={styles.error}></span>
+    </div>
+  );
+};
+
+export default DropInput;

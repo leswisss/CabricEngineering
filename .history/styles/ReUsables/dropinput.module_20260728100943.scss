@@ -1,0 +1,11 @@
+
+.label {
+  text-transform: none;
+  font-size: calc(var(--normal-font-size));
+  color: black;
+  font-family: var(--medium-font);
+}
+.error {
+  font-size: calc(var(--normal-font-size) - 0.1rem);
+  color: rgb(255, 29, 29);
+}

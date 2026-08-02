@@ -1,0 +1,8 @@
+export async function getAllProhectSlugs(): Promise<string[]> {
+  const query = `*[_type == "property" && defined(slug.current)]{
+    "slug": slug.current
+  }`;
+
+  const properties = await client.fetch(query);
+  return properties.map((property: { slug: string }) => property.slug);
+}

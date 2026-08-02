@@ -1,0 +1,17 @@
+.pro__wrapper {
+  padding: 5rem 0 7rem;
+  width: 100%;
+  height: auto;
+}
+
+.pro__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+//RESPONSIVE DESIGN
+@media screen and (Max-width: ) {
+  
+}
